@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Luck Riddhuna! 💫</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            color: white;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 550px;
+            padding: 45px 30px;
+            text-align: center;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(12px);
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+            animation: appear 1s ease;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .emoji {
+            font-size: 60px;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 15px 0 5px;
+        }
+
+        h2 {
+            font-weight: normal;
+            margin-top: 0;
+            opacity: 0.9;
+        }
+
+        .message {
+            font-size: 18px;
+            line-height: 1.7;
+            margin: 25px 0;
+        }
+
+        .funny {
+            background: rgba(0,0,0,0.18);
+            padding: 18px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        button {
+            border: none;
+            padding: 14px 25px;
+            border-radius: 30px;
+            background: white;
+            color: #6845a5;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+        }
+
+        #secret {
+            display: none;
+            margin-top: 20px;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .star {
+            position: absolute;
+            font-size: 20px;
+            animation: float 6s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(100vh) rotate(0deg);
+            }
+            to {
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating stars -->
+    <div class="star" style="left:10%; animation-delay:0s;">✨</div>
+    <div class="star" style="left:25%; animation-delay:2s;">⭐</div>
+    <div class="star" style="left:45%; animation-delay:1s;">✨</div>
+    <div class="star" style="left:65%; animation-delay:3s;">🌟</div>
+    <div class="star" style="left:85%; animation-delay:1.5s;">✨</div>
+
+    <div class="card">
+
+        <div class="emoji">📚✨</div>
+
+        <h1>Good Luck, Riddhuna! 💫</h1>
+
+        <h2>Tomorrow's exam has been warned. 😌</h2>
+
+        <div class="message">
+            Okay Riddhuna, first of all...<br><br>
+
+            <b>DON'T STRESS. 😭</b><br>
+
+            You've got this. Just stay calm, read the questions
+            properly, and give it your best shot. 💪
+            
+            <br><br>
+
+            I hope tomorrow your brain decides to cooperate
+            instead of suddenly going:
+            <br>
+            <b>"Sorry, this information is currently unavailable." 💀</b>
+        </div>
+
+        <div class="funny">
+            😂 <b>IMPORTANT EXAM INSTRUCTIONS:</b><br><br>
+
+            1. Enter the exam hall like you own the place. 😎<br>
+            2. Read the questions before declaring war on them. 💀<br>
+            3. If you don't know an answer... remain calm. 😂<br>
+            4. Write what you know confidently.<br>
+            5. Leave the exam hall with your dignity intact. 🫡
+        </div>
+
+        <button onclick="showMessage()">
+            Click for one last message 👀
+        </button>
+
+        <div id="secret">
+            🌟 <b>Riddhuna, seriously...</b><br><br>
+
+            Don't overthink tomorrow.
+            You've prepared enough to give it a proper shot,
+            so just trust yourself and do your thing. ❤️
+            
+            <br><br>
+
+            And remember...<br>
+            <b>It's an exam, not a final boss fight. 😂</b>
+            
+            <br><br>
+
+            <b>ALL THE BEST! YOU'VE GOT THIS! 💪📚✨</b>
+        </div>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("secret").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
